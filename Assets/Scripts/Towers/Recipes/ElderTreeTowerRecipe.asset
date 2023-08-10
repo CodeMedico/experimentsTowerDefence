@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8806db928e679d341b43c99ff45899a6, type: 3}
+  m_Name: ElderTreeTowerRecipe
+  m_EditorClassIdentifier: 
+  inFirstTower: {fileID: 11400000, guid: 83cd5ed562bd7a740905ba3f8ef12259, type: 2}
+  inSecondTower: {fileID: 11400000, guid: 16018fa2b7e9a3446b1afaf523ccbeb0, type: 2}
+  outTower: {fileID: 11400000, guid: dacb9c8a0d8909243bb13eb4cc2ba30b, type: 2}

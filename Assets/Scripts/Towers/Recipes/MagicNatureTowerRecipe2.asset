@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8806db928e679d341b43c99ff45899a6, type: 3}
+  m_Name: MagicNatureTowerRecipe2
+  m_EditorClassIdentifier: 
+  inFirstTower: {fileID: 11400000, guid: 3d48572e8bfbc0145a3dc87fde91a4de, type: 2}
+  inSecondTower: {fileID: 11400000, guid: ab21bbdf171bd9b41928a162f7034462, type: 2}
+  outTower: {fileID: 11400000, guid: 189672d82dae62448b3d1a692b4470f1, type: 2}

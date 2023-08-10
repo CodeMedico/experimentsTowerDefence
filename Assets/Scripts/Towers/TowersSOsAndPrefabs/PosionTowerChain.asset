@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bae4b43872c7ae41a3b98a6ca1b0ef7, type: 3}
+  m_Name: PosionTowerChain
+  m_EditorClassIdentifier: 
+  Name: 1
+  TowerTier: 1
+  Prefab: {fileID: 7487318263708068128, guid: 616b2cbb0494a8945affff447e74e609, type: 3}
+  TowerRange: 5
+  AttacRate: 1
+  ProjectileSO: {fileID: 11400000, guid: 4bd48549c014bfe4b97f89ce5b5182f5, type: 2}

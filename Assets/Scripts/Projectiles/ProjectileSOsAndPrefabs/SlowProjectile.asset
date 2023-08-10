@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef139e3c89939f842af2a30337b1267e, type: 3}
+  m_Name: SlowProjectile
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 4954609504049836833, guid: 583a3e39f60de934481d2433b753c583, type: 3}
+  ProjectileName: Simple
+  Damage: 4
+  Speed: 8
+  Trajectory: 0
+  StatusEffectSOs:
+  - {fileID: 11400000, guid: 86d1d0d30755413418ec1210963c54d4, type: 2}

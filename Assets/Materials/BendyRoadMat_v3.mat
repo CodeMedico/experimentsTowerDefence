@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BendyRoadMat_v3
+  m_Shader: {fileID: -6465566751694194690, guid: 72639d009f69d6f42989353e1037387e,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Base:
+        m_Texture: {fileID: 2800000, guid: 7be257c79f690d24bad2bfacb97f73f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 5c8344155e3a23d42b6492faf8788de6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 03f4c0a722c8a2d4888711930a0279f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_0492fb29a5414b1798e89cb97dd72c4c_Texture_1:
+        m_Texture: {fileID: 2800000, guid: caa061258e3df3641ae397b70166aa06, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_3998097fe4c64739abfec021c13f6fe6_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5c8344155e3a23d42b6492faf8788de6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_52ac4bdf03e34439bda2b9e3964b0d5e_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5c8344155e3a23d42b6492faf8788de6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c10612da994f4b58977ab6a50b96b6a4_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5c8344155e3a23d42b6492faf8788de6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_ef0c799052b14234a09a32350c471b38_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 5e9e2f9e92721ba4a80a85d8d6a79dd9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ambient:
+        m_Texture: {fileID: 2800000, guid: 5e9e2f9e92721ba4a80a85d8d6a79dd9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _LerpMulti: 23.6
+    - _LerpPower: 0.14
+    - _LineThick: 0.0217
+    - _Mod1: -0.53
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _SomeMod: 1.95
+    - _mod2: 1.43
+    - _mod3: 0.69
+    - _mod4: -7.85
+    m_Colors:
+    - _NormalMapManipulation: {r: 1, g: 1, b: 1, a: 0}
+    - _RandomRangeAdd: {r: -3.62, g: 3.29, b: 0, a: 0}
+    - _Seed: {r: 2.82, g: 3.76, b: 2.5, a: 0}
+    - _Tiles: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &4177935469853777161
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef139e3c89939f842af2a30337b1267e, type: 3}
+  m_Name: LaserBurstSO
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 9197833230869509387, guid: 564b6fd7b04277e419ea771114f58c5c, type: 3}
+  ProjectileName: LaserBurst
+  Damage: 15
+  Speed: 0
+  Trajectory: 0
+  StatusEffectSOs: []

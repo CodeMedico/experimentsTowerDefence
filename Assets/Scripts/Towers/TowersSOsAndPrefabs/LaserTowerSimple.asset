@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bae4b43872c7ae41a3b98a6ca1b0ef7, type: 3}
+  m_Name: LaserTowerSimple
+  m_EditorClassIdentifier: 
+  Name: 5
+  Prefab: {fileID: 7487318263708068128, guid: 55f45b9788ffcbd48bdff55f1259f919, type: 3}
+  TowerRange: 3
+  AttacRate: 0.05
+  ProjectileSO: {fileID: 11400000, guid: fb724d43e8f70dc439f2429c11a9fd5a, type: 2}
