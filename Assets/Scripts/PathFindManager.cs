@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -25,15 +26,7 @@ public class PathFindManager : MonoBehaviour
     private void Start()
     {
         RemoveSpawnersFromTiles();
-        foreach (Vector3 spawnerPosition in spawnersPositions)
-        {
-            visitedTiles.Clear();
-            foreach (Vector3 pathTile in pathTilePositions)
-            {
-                visitedTiles.Add(pathTile, false);
-            }
-            pathQueue[spawnerPosition] = BuildPath(spawnerPosition, pathTilePositions, new Queue<Vector3>());
-        }
+        
     }
 
     public void SendPosition(ITile tile)
@@ -110,6 +103,18 @@ public class PathFindManager : MonoBehaviour
 
     public Queue<Vector3> GetRoute(Vector3 position)
     {
+        if (pathQueue.Count == 0)
+        {
+            foreach (Vector3 spawnerPosition in spawnersPositions)
+            {
+                visitedTiles.Clear();
+                foreach (Vector3 pathTile in pathTilePositions)
+                {
+                    visitedTiles.Add(pathTile, false);
+                }
+                pathQueue[spawnerPosition] = BuildPath(spawnerPosition, pathTilePositions, new Queue<Vector3>());
+            }
+        }
         position = new Vector3(Mathf.Round(position.x), 0f, Mathf.Round(position.z));
         Queue<Vector3> returnThis = new Queue<Vector3>(pathQueue[position]);
         return returnThis;
