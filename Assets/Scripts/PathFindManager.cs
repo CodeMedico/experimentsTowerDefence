@@ -25,7 +25,7 @@ public class PathFindManager : MonoBehaviour
 
     private void Start()
     {
-        RemoveSpawnersFromTiles();
+        
         
     }
 
@@ -103,7 +103,8 @@ public class PathFindManager : MonoBehaviour
 
     public Queue<Vector3> GetRoute(Vector3 position)
     {
-        if (pathQueue.Count == 0)
+        RemoveSpawnersFromTiles();
+        if (pathQueue[position].Count <= 1)
         {
             foreach (Vector3 spawnerPosition in spawnersPositions)
             {
