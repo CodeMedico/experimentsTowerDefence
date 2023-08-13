@@ -42,10 +42,10 @@ public class PlayerInput : MonoBehaviour
                 if (PathFindManager.Instance.GetbuildingsReferences().ContainsKey(mousePointRounded) && 
                     PathFindManager.Instance.GetbuildingsReferences()[mousePointRounded].TryGetComponent<Tower>(out Tower tower))
                 {
-                    
-                    
+                    if(tower.GetTowerSO().TowerTier == TowerSO.Tier.One)
+                    {
                         levelUI.PickupTower(tower.gameObject);
-                    
+                    }
                 }
             }
             else if (Input.GetMouseButtonDown(1))
