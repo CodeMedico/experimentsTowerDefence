@@ -485,7 +485,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Plague Tower
+  m_text: ChainPoison Tower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5715,6 +5715,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 108dcb0bbe7462c4588f80443b7ad1ca, type: 2}
   - {fileID: 11400000, guid: 42f0ac1e6d6300a4e8e34ac9658f76fc, type: 2}
   - {fileID: 11400000, guid: 297ffc358f92b604599bb033bb4f3548, type: 2}
+  - {fileID: 11400000, guid: 37203b880a9429c49a32acb2f8976ee3, type: 2}
   state: 0
 --- !u!1 &1043606773
 GameObject:

@@ -40,7 +40,7 @@ public class EnemyVisual : MonoBehaviour
 
     private void Enemy_OnStatusEffectAdd(object sender, EnemyScript.OnStatusEffect e)
     {
-        if (e.statusEffect.name == StatusEffect.Name.Posion)
+        if (e.statusEffect.name == StatusEffect.Name.Posion || e.statusEffect.name == StatusEffect.Name.Toxin)
         {
             PoisonVisualToggle(true);
         }

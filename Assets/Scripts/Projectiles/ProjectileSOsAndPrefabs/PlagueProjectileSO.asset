@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef139e3c89939f842af2a30337b1267e, type: 3}
+  m_Name: PlagueProjectileSO
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 4954609504049836833, guid: 508a424fc27cf704982bba76008537a8, type: 3}
+  ProjectileName: PlagueProjectile
+  Damage: 1
+  Speed: 5
+  Trajectory: 0
+  StatusEffectSOs:
+  - {fileID: 11400000, guid: a6b6d8a39c6cfb44e8777fd65e09c138, type: 2}

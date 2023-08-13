@@ -23,6 +23,7 @@ public class TowerSO : ScriptableObject
         NovaTower,
         ArrowTower,
         ElderTreeTower,
+        BalistaTower,
     };
     public enum Tier
     {

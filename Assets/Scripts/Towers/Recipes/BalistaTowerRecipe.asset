@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8806db928e679d341b43c99ff45899a6, type: 3}
-  m_Name: PlagueTowerRecipe
+  m_Name: BalistaTowerRecipe
   m_EditorClassIdentifier: 
-  inFirstTower: {fileID: 11400000, guid: ff0f640239272e5469d05bea33581b07, type: 2}
-  inSecondTower: {fileID: 11400000, guid: 3d48572e8bfbc0145a3dc87fde91a4de, type: 2}
-  outTower: {fileID: 11400000, guid: d67256e629e35f94ba5cbd28f6218fce, type: 2}
+  inFirstTower: {fileID: 11400000, guid: 3d3d6cf101c254e49aa96b63a5eea2f7, type: 2}
+  inSecondTower: {fileID: 11400000, guid: 7b1d3d19d08efc44c96084dfa6e7c588, type: 2}
+  outTower: {fileID: 0}
