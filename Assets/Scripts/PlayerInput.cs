@@ -39,10 +39,14 @@ public class PlayerInput : MonoBehaviour
             levelUI.ShowQuad(mousePointRounded);
             if (Input.GetMouseButtonDown(0))
             {
-                if (PathFindManager.Instance.GetbuildingsReferences().ContainsKey(mousePointRounded) && 
+                if (PathFindManager.Instance.GetbuildingsReferences().ContainsKey(mousePointRounded) &&
                     PathFindManager.Instance.GetbuildingsReferences()[mousePointRounded].TryGetComponent<Tower>(out Tower tower))
                 {
-                    if(tower.GetTowerSO().TowerTier == TowerSO.Tier.One)
+                    if (tower.GetTowerSO().TowerTier == TowerSO.Tier.One)
+                    {
+                        levelUI.PickupTower(tower.gameObject);
+                    }
+                    else if (levelUI.GettowerBuildingPreview() != null) 
                     {
                         levelUI.PickupTower(tower.gameObject);
                     }

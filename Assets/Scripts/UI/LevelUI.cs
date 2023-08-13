@@ -195,7 +195,6 @@ public class LevelUI : MonoBehaviour
                     Destroy(towerBuildingPreview);
                     towerBuildingPreview = Instantiate(towerRecipeSO.outTower.Prefab, playerInput.GetMousePositionOnPlane(),Quaternion.identity);
                     FinishBuilding(true);
-                    Debug.Log("mergeDone");
                     break;
                 }
             }
@@ -207,7 +206,6 @@ public class LevelUI : MonoBehaviour
                     Destroy(towerBuildingPreview);
                     towerBuildingPreview = Instantiate(towerRecipeSO.outTower.Prefab, playerInput.GetMousePositionOnPlane(), Quaternion.identity);
                     FinishBuilding(true);
-                    Debug.Log("mergeDone");
                     break;
                 }
             }
@@ -222,5 +220,10 @@ public class LevelUI : MonoBehaviour
         {
             Destroy(cylinder.gameObject);
         }
+    }
+
+    public GameObject GettowerBuildingPreview()
+    {
+        return towerBuildingPreview;
     }
 }
