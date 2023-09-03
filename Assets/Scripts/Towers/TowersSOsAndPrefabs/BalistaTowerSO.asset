@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bae4b43872c7ae41a3b98a6ca1b0ef7, type: 3}
   m_Name: BalistaTowerSO
   m_EditorClassIdentifier: 
-  Name: 0
-  TowerTier: 0
-  Prefab: {fileID: 0}
-  TowerRange: 0
-  AttacRate: 0
-  ProjectileSO: {fileID: 0}
+  Name: 16
+  TowerTier: 2
+  Prefab: {fileID: 4133032241251794460, guid: f4b54aa543a4d424e885df03cd762506, type: 3}
+  TowerRange: 4
+  AttacRate: 0.7
+  ProjectileSO: {fileID: 11400000, guid: 0011ce1370023df46a3f443754b5134e, type: 2}

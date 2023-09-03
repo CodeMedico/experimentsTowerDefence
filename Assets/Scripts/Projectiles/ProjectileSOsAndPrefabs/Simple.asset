@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 4954609504049836833, guid: c9f4df8dc28a39f448448a745aedbe5f, type: 3}
   ProjectileName: Simple
-  Damage: 25.42
+  Damage: 2
   Speed: 8
   Trajectory: 0
-  StatusEffectSO: {fileID: 0}
+  StatusEffectSOs: []

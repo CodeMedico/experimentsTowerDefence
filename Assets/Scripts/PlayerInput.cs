@@ -58,6 +58,18 @@ public class PlayerInput : MonoBehaviour
                 levelUI.DestroyHighlights();
             }
         }
+        else if (levelUI.state == LevelUI.UIState.Sell)
+        {
+            mousePointRounded = ConvertScreenMousePositionToPlane();
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (PathFindManager.Instance.GetbuildingsReferences().ContainsKey(mousePointRounded) &&
+                    PathFindManager.Instance.GetbuildingsReferences()[mousePointRounded].TryGetComponent<Tower>(out Tower tower))
+                {
+                    levelUI.SellTower(tower.gameObject);
+                }
+            }
+        }
     }
 
     private Vector3 ConvertScreenMousePositionToPlane()

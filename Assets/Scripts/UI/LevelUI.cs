@@ -15,6 +15,7 @@ public class LevelUI : MonoBehaviour
     [SerializeField] private GameObject cylinderHightLight;
     [SerializeField] private Button buildButton;
     [SerializeField] private Button mergeButton;
+    [SerializeField] private Button sellButton;
     [SerializeField] private Button[] towerButtons;
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private List<TowerSO> towerSOs = new List<TowerSO>();
@@ -32,6 +33,7 @@ public class LevelUI : MonoBehaviour
         BuildMenu,
         Building,
         Merge,
+        Sell,
     }
     public UIState state;
     void Start()
@@ -48,6 +50,7 @@ public class LevelUI : MonoBehaviour
         }
         buildButton.onClick.AddListener(BuildState);
         mergeButton.onClick.AddListener(MergeState);
+        sellButton.onClick.AddListener(Sell);
         containerTowerButtons.SetActive(false);
         cylinderHightLight.SetActive(false);
 
@@ -112,6 +115,7 @@ public class LevelUI : MonoBehaviour
         drawDistance.gameObject.SetActive(false);
         buildButton.gameObject.SetActive(true);
         mergeButton.gameObject.SetActive(true);
+        sellButton.gameObject.SetActive(true);
         Time.timeScale = 1f;
 
         if (isFinishBuilding)
@@ -162,10 +166,39 @@ public class LevelUI : MonoBehaviour
         HideMainBuildMenu();
     }
 
+    private void Sell()
+    {
+        state = UIState.Sell;
+        HideMainBuildMenu();
+        Time.timeScale = 0f;
+        Dictionary<Vector3, Transform> towers = PathFindManager.Instance.GetbuildingsReferences();
+        foreach (Transform transform in towers.Values)
+        {
+            if (transform.TryGetComponent<Tower>(out Tower tower))
+            {
+                GameObject newHighLight = Instantiate(cylinderHightLight, transform.position, Quaternion.identity, transform);
+                cylinderHighLightInstances.Add(newHighLight);
+                newHighLight.SetActive(true);
+            }
+        }
+    }
+
+    public void SellTower(GameObject gameObject)
+    {
+        //money//
+        towerBuildingPreview = null;
+        Tower tower = gameObject.GetComponent<Tower>();
+        PathFindManager.Instance.RemovePosition(tower as Tower);
+        Destroy(gameObject);
+        FinishBuilding(false);
+        DestroyHighlights();
+    }
+
     private void HideMainBuildMenu()
     {
         buildButton.gameObject.SetActive(false);
         mergeButton.gameObject.SetActive(false);
+        sellButton.gameObject.SetActive(false);
     }
 
     public void PickupTower(GameObject gameObject)
@@ -193,7 +226,7 @@ public class LevelUI : MonoBehaviour
                 {
                     Destroy(tower.gameObject);
                     Destroy(towerBuildingPreview);
-                    towerBuildingPreview = Instantiate(towerRecipeSO.outTower.Prefab, playerInput.GetMousePositionOnPlane(),Quaternion.identity);
+                    towerBuildingPreview = Instantiate(towerRecipeSO.outTower.Prefab, playerInput.GetMousePositionOnPlane(), Quaternion.identity);
                     FinishBuilding(true);
                     break;
                 }
@@ -225,5 +258,10 @@ public class LevelUI : MonoBehaviour
     public GameObject GettowerBuildingPreview()
     {
         return towerBuildingPreview;
+    }
+
+    private void CreateHighLights()
+    {
+
     }
 }
