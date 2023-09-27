@@ -135,7 +135,10 @@ public class PathFindManager : MonoBehaviour
     {
         refractorTowers.Add(tower);
     }
-
+    public void RefractorTowerRemove(RefractorTower tower)
+    {
+        refractorTowers.Remove(tower);
+    }
     public List<RefractorTower> GetRefractorTowersList()
     {
         return refractorTowers;

@@ -129,7 +129,10 @@ public class RefractorTower : LaserTowerSimple, ITarget
     {
         return route;
     }
-
+    public void OnDestroy()
+    {
+        PathFindManager.Instance.RefractorTowerRemove(this);
+    }
     public Vector3 GetPosition() { return projectileSpawnPoint.position; }
 
     public bool IsDestroyed() { return this == null; }
